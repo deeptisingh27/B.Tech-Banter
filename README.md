@@ -1,5 +1,4 @@
-B.Tech Banter:
-A simple web app that displays fun, relatable, and motivational one-liners from B.Tech/CSE student life. Built using HTML, CSS, and JavaScript.
+B.Tech Banter is a simple web app that displays fun, relatable, and motivational one-liners from B.Tech/CSE student life. Built using HTML, CSS, and JavaScript.
 
 Features:
 1) Animated gradient background for a modern look
@@ -11,3 +10,5 @@ Tech Stack:
 1) HTML – Structure of the app
 2) CSS – Styling and animations
 3) JavaScript – Quote generator logic
+
+Live Deployement: https://deeptisingh27.github.io/B.Tech-Banter/ 
