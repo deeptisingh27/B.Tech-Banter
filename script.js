@@ -24,18 +24,14 @@ let firstClick = true;
 function newQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     const quoteEl = document.getElementById("quote");
-    const authorEl = document.getElementById("author");
     const button = document.querySelector(".generate");
     const selected = quotes[randomIndex];
 
     quoteEl.style.opacity = 0;
-    authorEl.style.opacity = 0;
-
+    
     setTimeout(() => {
         quoteEl.textContent = selected.text;
-        authorEl.textContent = selected.author ? "— " + selected.author : "";
         quoteEl.style.opacity = 1;
-        authorEl.style.opacity = 1;
     }, 300);
 
     if (firstClick) {
@@ -49,3 +45,4 @@ document.addEventListener("keydown", (e) => {
         newQuote();
     }
 });
+
