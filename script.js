@@ -19,7 +19,6 @@ const quotes = [
     { text: "Dream in code, build in projects, succeed in life." }
 ];
 
-// Track if first click happened
 let firstClick = true;
 
 function newQuote() {
@@ -29,7 +28,6 @@ function newQuote() {
     const button = document.querySelector(".generate");
     const selected = quotes[randomIndex];
 
-    // Fade effect
     quoteEl.style.opacity = 0;
     authorEl.style.opacity = 0;
 
@@ -40,14 +38,12 @@ function newQuote() {
         authorEl.style.opacity = 1;
     }, 300);
 
-    // Change button text after first click
     if (firstClick) {
         button.textContent = "Next Line";
         firstClick = false;
     }
 }
 
-// Also allow spacebar key for new line
 document.addEventListener("keydown", (e) => {
     if (e.code === "Space") {
         newQuote();
